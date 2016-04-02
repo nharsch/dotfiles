@@ -109,7 +109,7 @@
   # the usual default is to push all branches
   default = upstream
 [core]
-  autocrlf = false
+	autocrlf = input
   editor = vim
   excludesfile = ~/.yadr/git/gitignore
 [advice]
@@ -129,4 +129,4 @@
 	name = nharsch
 	email = nigelharsch@gmail.com
 [credential]
-	helper = cache
+	helper = osxkeychain
