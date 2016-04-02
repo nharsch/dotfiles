@@ -128,5 +128,6 @@
 [user]
 	name = nharsch
 	email = nigelharsch@gmail.com
+
 [credential]
 	helper = osxkeychain
