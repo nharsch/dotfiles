@@ -111,3 +111,7 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+set mouse=a
+set colorcolumn=79
+let g:clojure_fuzzy_indent_patterns = ['.']
+
