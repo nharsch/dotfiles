@@ -3,6 +3,8 @@
 # Don't change. The following determines where YADR is installed.
 yadr=$HOME/.yadr
 
+prog=$HOME/Documents/programming
+
 # Get operating system
 platform='unknown'
 unamestr=$(uname)
