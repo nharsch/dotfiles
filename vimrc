@@ -120,8 +120,16 @@ set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
+
 so ~/.yadr/vim/settings.vim
+
 set mouse=a
 set colorcolumn=79
+
 let g:clojure_fuzzy_indent_patterns = ['.']
+
+autocmd FileType html :setlocal sw=2 ts=2 sts=2
+autocmd FileType js :setlocal sw=2 ts=2 sts=2
+autocmd FileType clj :setlocal sw=2 ts=2 sts=2
+autocmd FileType cljs :setlocal sw=2 ts=2 sts=2
 
