@@ -213,3 +213,11 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+# Docker Compose
+alias dkc=docker-compose
+alias dkm=docker-machine
+alias dkrun=dkc run web
+
+# Chrome
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
