@@ -217,3 +217,4 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
 # Docker Compose
 alias dkc=docker-compose
 alias dkm=docker-machine
+alias dkrun='docker-compose run web'
