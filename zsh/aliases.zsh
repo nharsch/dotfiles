@@ -217,7 +217,7 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
 # Docker Compose
 alias dkc=docker-compose
 alias dkm=docker-machine
-alias dkrun=dkc run web
+alias dkrun="dkc run --rm web"
 
 # Chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
