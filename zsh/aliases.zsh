@@ -219,5 +219,11 @@ alias dkc=docker-compose
 alias dkm=docker-machine
 alias dkrun="dkc run web"
 
+alias dcd=bin/dcd
+alias dcrun="dcd run --rm web"
+
+# helpers
+alias pingme="osascript -e 'display notification \"annoyingly long shell process finished\" with title \"PING ME\"'"
+
 # Chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
