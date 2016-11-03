@@ -219,5 +219,9 @@ alias dkc=docker-compose
 alias dkm=docker-machine
 alias dkrun="dkc run --rm web"
 
+# Project Docker
+alias dcd=bin/dcd
+alias dcrun="bin/dcd run --rm web"
+
 # Chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
