@@ -217,13 +217,11 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
 # Docker Compose
 alias dkc=docker-compose
 alias dkm=docker-machine
-alias dkrun="dkc run web"
+alias dkrun="dkc run --rm web"
 
+# Project Docker
 alias dcd=bin/dcd
-alias dcrun="dcd run --rm web"
-
-# helpers
-alias pingme="osascript -e 'display notification \"annoyingly long shell process finished\" with title \"PING ME\"'"
+alias dcrun="bin/dcd run --rm web"
 
 # Chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
