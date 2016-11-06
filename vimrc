@@ -29,7 +29,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
@@ -60,9 +60,9 @@ endif
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
 
 " Auto indent pasted text
@@ -120,16 +120,12 @@ set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
-
 so ~/.yadr/vim/settings.vim
-
 set mouse=a
 set colorcolumn=79
-
 let g:clojure_fuzzy_indent_patterns = ['.']
+set clipboard=unnamed
 
-autocmd FileType html :setlocal sw=2 ts=2 sts=2
-autocmd FileType js :setlocal sw=2 ts=2 sts=2
-autocmd FileType clj :setlocal sw=2 ts=2 sts=2
-autocmd FileType cljs :setlocal sw=2 ts=2 sts=2
+" jsx recognition
+let g:jsx_ext_required = 0
 
