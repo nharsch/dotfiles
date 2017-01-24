@@ -225,3 +225,9 @@ alias dcrun="bin/dcd run --rm web"
 
 # Chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+# devcave
+alias devcave_game_vnc='open vnc://192.168.100.94'
+
+# pingme
+alias pingme="osascript -e 'display notification \"Shell process finished\" with title \"PING ME\"' && say 'all done'"
