@@ -110,6 +110,7 @@ alias gfap='git fetch --all --prune'
 alias gfch='git fetch'
 alias gd='git diff'
 alias gb='git b'
+alias gbd='git b -D -w'
 # Staged and cached are the same thing
 alias gdc='git diff --cached -w'
 alias gds='git diff --staged -w'
@@ -181,7 +182,6 @@ alias zrc='zeus rails c'
 alias zrs='zeus rails s'
 alias zrdbm='zeus rake db:migrate'
 alias zrdbtp='zeus rake db:test:prepare'
-alias zzz='rm .zeus.sock; pkill zeus; zeus start'
 
 # Rspec
 alias rs='rspec spec'
@@ -225,3 +225,6 @@ alias dcrun="bin/dcd run --rm web"
 
 # Chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+# pingme
+alias pingme="osascript -e 'display notification \"Shell process finished\" with title \"PING ME\"' && say 'all done'"
