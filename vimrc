@@ -60,9 +60,9 @@ endif
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
 
 " Auto indent pasted text
@@ -119,6 +119,9 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
+" ================ closetag ==========================
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
+
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
 set mouse=a
@@ -128,4 +131,6 @@ set clipboard=unnamed
 
 " jsx recognition
 let g:jsx_ext_required = 0
+
+
 
