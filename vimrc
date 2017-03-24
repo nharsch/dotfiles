@@ -130,3 +130,5 @@ set clipboard=unnamed
 let g:jsx_ext_required = 0
 
 colorscheme monokai-soda
+
+set shell=/bin/zsh\ -l
