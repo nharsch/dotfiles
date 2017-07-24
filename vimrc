@@ -129,4 +129,12 @@ set clipboard=unnamed
 " jsx recognition
 let g:jsx_ext_required = 0
 
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
+
 colorscheme monokai-soda
+
+map = <c-w>>
+map - <c-w><
+map _ <c-w>_
+map + <c-w>+
+
