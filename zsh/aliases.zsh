@@ -3,7 +3,7 @@
 # Don't change. The following determines where YADR is installed.
 yadr=$HOME/.yadr
 
-prog=$HOME/Documents/programming
+prog=$HOME/programming
 
 # Get operating system
 platform='unknown'
@@ -228,3 +228,7 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 # pingme
 alias pingme="osascript -e 'display notification \"Shell process finished\" with title \"PING ME\"' && say 'all done'"
+
+# slack cli
+alias lunchtime='slack setstatus lunch :burrito: && slack setaway'
+alias worktime='slack setstatus work :keyboard: && slack setactive'
