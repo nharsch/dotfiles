@@ -132,9 +132,6 @@ let g:jsx_ext_required = 0
 
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 
-map = 2<C-w>>
-map - 2<C-w><
-=======
 colorscheme monokai-soda
 
 map = <c-w>>
