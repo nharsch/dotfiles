@@ -134,3 +134,10 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 
 map = 2<C-w>>
 map - 2<C-w><
+=======
+colorscheme monokai-soda
+
+map = <c-w>>
+map - <c-w><
+map _ <c-w>_
+map + <c-w>+
