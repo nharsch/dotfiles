@@ -126,7 +126,7 @@
 [include]
   path = .gitconfig.user
 [credential]
-	helper = osxkeychain
+	helper = cache
 [user]
 	name = Nigel Harsch
 	email = nigelharsch@gmail.com
