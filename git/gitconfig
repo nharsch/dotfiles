@@ -130,3 +130,8 @@
 [user]
 	name = Nigel Harsch
 	email = nigelharsch@gmail.com
+
+[remote "gkprod"]
+    url = greenkey_prod:/opt/greenkey_git.git
+    fetch = +refs/heads/*:refs/remotes/prod/*
+

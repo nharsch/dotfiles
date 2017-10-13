@@ -124,13 +124,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
-set mouse=a
-set colorcolumn=79
-let g:clojure_fuzzy_indent_patterns = ['.']
-set clipboard=unnamed
 
 " jsx recognition
 let g:jsx_ext_required = 0
-
-
 

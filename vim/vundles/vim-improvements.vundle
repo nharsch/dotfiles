@@ -31,3 +31,6 @@ Bundle "davidhalter/jedi-vim"
 Bundle "tpope/vim-fireplace"
 Bundle "vim-scripts/paredit.vim"
 Bundle "alvan/vim-closetag"
+Bundle "guns/vim-sexp"
+Bundle "tpope/vim-sexp-mappings-for-regular-people"
+Bundle 'plasticboy/vim-markdown'
