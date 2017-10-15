@@ -232,3 +232,7 @@ alias pingme="osascript -e 'display notification \"Shell process finished\" with
 # slack cli
 alias lunchtime='slack setstatus lunch :burrito: && slack setaway'
 alias worktime='slack setstatus work :keyboard: && slack setactive'
+
+# youtube-dl
+alias youtubetomp3='youtube-dl'
+alias youtubetowav='youtube-dl --audio-format wav'
