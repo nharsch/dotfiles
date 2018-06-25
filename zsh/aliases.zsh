@@ -3,7 +3,7 @@
 # Don't change. The following determines where YADR is installed.
 yadr=$HOME/.yadr
 
-prog=$HOME/programming
+prog=$HOME/documents/programming
 
 # Get operating system
 platform='unknown'
@@ -222,6 +222,14 @@ alias dkrun="dkc run --rm web"
 # Project Docker
 alias dcd=bin/dcd
 alias dcrun="bin/dcd run --rm web"
+alias dcmanage="bin/dcd run --rm web ./manage.py"
+alias dcshell="bin/dcd run --rm web ./manage.py shell"
+
+# docker clean
+alias dkclean_vols='docker volume rm $(docker volume ls -qf dangling=true)'
+alias dkclean_containers='docker rm $(docker ps -q -f status=exited)'
+alias dkclean_images='docker images --quiet --filter=dangling=true | xargs docker rmi -f'
+alias dkclean='dkclean_vols && dkclean_containers && dkclean_images'
 
 # Chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
@@ -233,3 +241,9 @@ alias pingme="osascript -e 'display notification \"Shell process finished\" with
 alias lunchtime='slack setstatus lunch :burrito: && slack setaway'
 alias worktime='slack setstatus work :keyboard: && slack setactive'
 alias donetime='slack setstatus dftd :beers: && slack setaway'
+alias deploytime='slack setstatus "deploying to production" :warning: && slack setactive'
+
+# PyPI Package Publishing
+alias pypi-version='python3 setup.py --version'
+alias pypi-push-public='python3 setup.py sdist bdist_wheel upload --sign'
+alias pypi-push-internal='python3 setup.py sdist bdist_wheel upload -r tsi-internal --sign'
