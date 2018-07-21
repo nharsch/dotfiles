@@ -140,3 +140,5 @@ map _ <c-w>_
 map + <c-w>+
 
 au BufRead,BufNewFile *.pyde set filetype=python
+
+set completeopt-=preview
