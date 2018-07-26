@@ -1,1 +1,1 @@
-autocmd FileType clojure let b:loaded_delimitMate = 0
+au FileType clojure let b:delimitMate_autoclose = 0
