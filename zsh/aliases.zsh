@@ -4,6 +4,15 @@
 yadr=$HOME/.yadr
 
 prog=$HOME/programming
+gitlab=$HOME/gitlab.com/thelabnyc
+internal=~gitlab/tsi-internal-libraries
+tempur=~gitlab/tsi-tempurpedic
+nhub=$HOME/github.com/nharsch
+
+alias aliases='vim $HOME/.yadr/zsh/aliases.zsh'
+
+alias gcurrent_branch='git rev-parse --abbrev-ref HEAD'
+alias gpushfix='git push --set-upstream origin $(gcurrent_branch)'
 
 # Get operating system
 platform='unknown'
