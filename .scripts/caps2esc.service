@@ -1,0 +1,8 @@
+[Unit]
+Description=Remaps capslock to escape
+
+[Service]
+ExecStart=/home/nharsch/.scripts/caps2esc_start.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -6,7 +6,8 @@ yadr=$HOME/.yadr
 prog=$HOME/programming
 gitlab=$HOME/gitlab.com/thelabnyc
 internal=~gitlab/tsi-internal-libraries
-tempur=~gitlab/tsi-tempurpedic
+sites=~gitlab/tsi-sites
+tempur=~gitlab/tsi-sites/tsi-tempurpedic
 nhub=$HOME/github.com/nharsch
 
 alias aliases='vim $HOME/.yadr/zsh/aliases.zsh'
