@@ -45,3 +45,5 @@ alias rnand="react-native run-android"
 alias rnloga="adb logcat"
 
 export PATH=$PATH:/Users/lab/Library/Android/sdk/platform-tools/
+
+export ANSIBLE_VAULT_PASSWORD_FILE='~/.vault_pass.txt'

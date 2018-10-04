@@ -6,14 +6,31 @@ yadr=$HOME/.yadr
 prog=$HOME/programming
 gitlab=$HOME/gitlab.com/thelabnyc
 internal=~gitlab/tsi-internal-libraries
+common=~internal/tsi-common
+cmreact=~internal/tsi-common-react
 sites=~gitlab/tsi-sites
 tempur=~gitlab/tsi-sites/tsi-tempurpedic
+cocoon=~gitlab/tsi-sites/tsi-cocoon
+sale=~gitlab/tsi-sites/tsi-sale
+pillows=~gitlab/tsi-sites/tsi-pillows
+toppers=~gitlab/tsi-sites/tsi-toppers
+infra=~gitlab/tsi-infrastructure
 nhub=$HOME/github.com/nharsch
+
 
 alias aliases='vim $HOME/.yadr/zsh/aliases.zsh'
 
 alias gcurrent_branch='git rev-parse --abbrev-ref HEAD'
 alias gpushfix='git push --set-upstream origin $(gcurrent_branch)'
+
+function gopen() {
+  # echo "$1";
+  if [ "$#" -eq 1 ]; then
+    git open origin $(gcurrent_branch)/"$1"
+  elif [ "$#" -eq 2 ]; then
+    git open origin $(gcurrent_branch)/"$1""\x23""L""$2"
+  fi
+}
 
 # Get operating system
 platform='unknown'
@@ -241,19 +258,18 @@ alias dkclean_containers='docker rm $(docker ps -q -f status=exited)'
 alias dkclean_images='docker images --quiet --filter=dangling=true | xargs docker rmi -f'
 alias dkclean='dkclean_vols && dkclean_containers && dkclean_images'
 
-# Chrome
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-
 # pingme
 alias pingme="osascript -e 'display notification \"Shell process finished\" with title \"PING ME\"' && say 'all done'"
 
 # slack cli
-alias lunchtime='slack setstatus lunch :burrito: && slack setaway'
-alias worktime='slack setstatus work :keyboard: && slack setactive'
-alias donetime='slack setstatus dftd :beers: && slack setaway'
-alias deploytime='slack setstatus "deploying to production" :warning: && slack setactive'
+alias lunchtime='ssh -t labmac zsh -ic "lunchtime"'
+alias worktime='ssh -t labmac zsh -ic "worktime"'
+alias donetime='ssh -t labmac zsh -ic "donetime"'
+alias deploytime='ssh -t labmac zsh -ic "deploytime"'
 
 # PyPI Package Publishing
 alias pypi-version='python3 setup.py --version'
 alias pypi-push-public='python3 setup.py sdist bdist_wheel upload --sign'
 alias pypi-push-internal='python3 setup.py sdist bdist_wheel upload -r tsi-internal --sign'
+
+alias chrome="chromium-browser"
