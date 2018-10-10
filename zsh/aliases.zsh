@@ -4,17 +4,18 @@
 yadr=$HOME/.yadr
 
 prog=$HOME/programming
-gitlab=$HOME/gitlab.com/thelabnyc
-internal=~gitlab/tsi-internal-libraries
+proj=$HOME/Projects
+internal=~proj/tsi-internal-libraries
 common=~internal/tsi-common
 cmreact=~internal/tsi-common-react
-sites=~gitlab/tsi-sites
-tempur=~gitlab/tsi-sites/tsi-tempurpedic
-cocoon=~gitlab/tsi-sites/tsi-cocoon
-sale=~gitlab/tsi-sites/tsi-sale
-pillows=~gitlab/tsi-sites/tsi-pillows
-toppers=~gitlab/tsi-sites/tsi-toppers
-infra=~gitlab/tsi-infrastructure
+infra=~proj/tsi-infrastructure
+sites=~proj/tsi-sites
+tempur=~sites/tsi-tempurpedic
+cocoon=~sites/tsi-cocoon
+sale=~sites/tsi-sale
+pillows=~sites/tsi-pillows
+toppers=~sites/tsi-toppers
+sync=~sites/tsi-sync
 nhub=$HOME/github.com/nharsch
 
 
@@ -273,3 +274,13 @@ alias pypi-push-public='python3 setup.py sdist bdist_wheel upload --sign'
 alias pypi-push-internal='python3 setup.py sdist bdist_wheel upload -r tsi-internal --sign'
 
 alias chrome="chromium-browser"
+
+alias vaws="aws-vault exec tsi -- aws"
+
+# lab ec2 workstation
+export DOCKER_HOST=tcp://nharsch.builds.tsiaws.com:2376
+export DOCKER_TLS_VERIFY=1
+
+export UNISONLOCALHOSTNAME="MYLOCALSYSTEM"
+
+export PATH=~/.npm-global/bin:$PATH
