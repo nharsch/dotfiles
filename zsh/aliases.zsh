@@ -273,9 +273,9 @@ alias pypi-version='python3 setup.py --version'
 alias pypi-push-public='python3 setup.py sdist bdist_wheel upload --sign'
 alias pypi-push-internal='python3 setup.py sdist bdist_wheel upload -r tsi-internal --sign'
 
-alias chrome="chromium-browser"
+alias vaws="aws-vault exec ${AWS_DEFAULT_PROFILE:-tsi} -- aws"
 
-alias vaws="aws-vault exec tsi -- aws"
+alias chrome="google-chrome"
 
 # lab ec2 workstation
 export DOCKER_HOST=tcp://nharsch.builds.tsiaws.com:2376
@@ -283,4 +283,4 @@ export DOCKER_TLS_VERIFY=1
 
 export UNISONLOCALHOSTNAME="MYLOCALSYSTEM"
 
-export PATH=~/.npm-global/bin:$PATH
+export PATH="/home/nigel/.local/bin:~/.npm-global/bin:$PATH"
