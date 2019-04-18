@@ -15,7 +15,9 @@ cocoon=~sites/tsi-cocoon
 sale=~sites/tsi-sale
 pillows=~sites/tsi-pillows
 toppers=~sites/tsi-toppers
+sealy=~sites/tsi-sealy
 sync=~sites/tsi-sync
+stearns=~sites/tsi-stearns
 nhub=$HOME/github.com/nharsch
 
 
@@ -283,4 +285,4 @@ export DOCKER_TLS_VERIFY=1
 
 export UNISONLOCALHOSTNAME="MYLOCALSYSTEM"
 
-export PATH="/home/nigel/.local/bin:~/.npm-global/bin:$PATH"
+export PATH="/home/nigel/.local/bin:/home/nigel/.npm-global/bin:$PATH"
