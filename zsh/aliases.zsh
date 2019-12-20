@@ -6,10 +6,12 @@ yadr=$HOME/.yadr
 prog=$HOME/programming
 proj=$HOME/Projects
 internal=~proj/tsi-internal-libraries
-common=~internal/tsi-common
-cmreact=~internal/tsi-common-react
 infra=~proj/tsi-infrastructure
 sites=~proj/tsi-sites
+foss=~proj/thelab-foss
+ecom=~sites/tsi-ecom-core
+common=~ecom/tsi-common/src/tsicommon
+cmreact=~ecom/tsi-common-react
 tempur=~sites/tsi-tempurpedic
 cocoon=~sites/tsi-cocoon
 sale=~sites/tsi-sale
@@ -18,7 +20,10 @@ toppers=~sites/tsi-toppers
 sealy=~sites/tsi-sealy
 sync=~sites/tsi-sync
 stearns=~sites/tsi-stearns
-nhub=$HOME/github.com/nharsch
+cloud=~sites/tsi-diamond
+reviews=~sites/tsi-reviews-api
+locator=~sites/tsi-retail-locator
+
 
 
 alias aliases='vim $HOME/.yadr/zsh/aliases.zsh'
@@ -286,3 +291,5 @@ export DOCKER_TLS_VERIFY=1
 export UNISONLOCALHOSTNAME="MYLOCALSYSTEM"
 
 export PATH="/home/nigel/.local/bin:/home/nigel/.npm-global/bin:$PATH"
+
+alias tickets='chrome "https://thelabnyc.plan.io/issues?assigned_to_id=me"'

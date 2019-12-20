@@ -128,7 +128,7 @@
 [credential]
 	helper = cache
 [user]
-	name = Nigel Harsch
+	name = nharsch
 	email = nigelharsch@gmail.com
 	signingkey = 32CC4DFAF4849ECC8BB99F6CB6C0E2DA202573A4
 
